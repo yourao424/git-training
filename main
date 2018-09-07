@@ -1,0 +1,14 @@
+public static void main(String[args]){
+	Yatagarasu yataA = new Yatagarasu();
+	Yatagarasu yataB = new Yatagarasu();
+	Zombie zomA = new Zombie();
+	Zombie zomB = new Zombie();
+
+	while(yataB.hp != 0){
+		zomA.attack(yataB.hp);
+		if(yataB.hp == 0){
+			yataB.dead();
+			break;
+		}
+	}
+}
