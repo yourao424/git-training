@@ -10,7 +10,7 @@ abstract class Life {
 		this.hp = hp;
 	}
 	
-	public dead() {
+	public void dead() {
 		
 	}
 }
