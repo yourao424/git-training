@@ -5,16 +5,17 @@ public class Yatagarasu extends Monster implements Briad {
     }
 
     public void attack() {
-        System.out.println("八咫烏の攻撃");
+        System.out.println("ヤタガラスの攻撃");
+
         return;
     }
 
     public void dead() {
-        System.out.println("八咫烏は死んだ");
+        System.out.println("ヤタガラスは死んだ");
     }
 
     public void run() {
-        System.out.print("八咫烏は走った！");
+        System.out.print("ヤタガラスは走った！");
         return;
     }
 }
