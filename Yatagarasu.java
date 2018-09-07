@@ -4,8 +4,9 @@ public class Yatagarasu extends Monster implements Briad {
         this.hp = hp;
     }
 
-    public void attack() {
+    public void attack(Monster monster) {
         System.out.println("ヤタガラスの攻撃");
+        monster.setHp(monster.getHp() - 100);
 
         return;
     }
