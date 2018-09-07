@@ -1,3 +1,3 @@
-interface Human{
-	public run(){}
+public interface Human{
+	public void run(){}
 }
