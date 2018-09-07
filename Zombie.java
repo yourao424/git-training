@@ -10,7 +10,7 @@ public class Zombie extends Monster implements Human{
 	}
 
 	//攻撃
-	public void atack(){
+	public void attack(){
 		System.out.print("攻撃しました");
 	}
 
@@ -26,8 +26,6 @@ public class Zombie extends Monster implements Human{
 	}
 
 	//getter,setter
-	public int getHp(){return hp;}
-	public int setHp(int hp){this.hp = hp;}
 	public int getAt(){return at;}
 	public int setAt(int at){this.at = at;}
 }
