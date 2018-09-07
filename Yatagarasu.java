@@ -1,4 +1,4 @@
-class Yatagarasu extends Monster implements Briad {
+public class Yatagarasu extends Monster implements Briad {
     
     Yatagarasu(int hp) {
         this.hp = hp;
@@ -9,7 +9,7 @@ class Yatagarasu extends Monster implements Briad {
         return;
     }
 
-    public dead() {
+    public void dead() {
         System.out.println("八咫烏は死んだ");
     }
 
