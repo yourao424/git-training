@@ -5,7 +5,7 @@ public class Main{
 		Zombie zomA = new Zombie();
 		Zombie zomB = new Zombie();
 
-		while(yataB.getHp() >= 0){
+		while(yataB.getHp() > 0){
 			zomA.attack(yataB);
 		}
 
