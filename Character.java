@@ -1,4 +1,4 @@
-public abstract class Charactor extends Life{
+public abstract class Character extends Life{
 
 	private int lv;
 	private String name;
