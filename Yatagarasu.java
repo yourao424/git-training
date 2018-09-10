@@ -35,4 +35,7 @@ public class Yatagarasu extends Monster implements Bird {
         System.out.print("ヤタガラスは走った！");
         return;
     }
+
+
+
 }
