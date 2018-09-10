@@ -12,11 +12,11 @@ public class Yatagarasu extends Monster implements Bird {
 
     /**
      * ヤタガラスの攻撃
-     * @param monster 攻撃対象のインスタンス
+     * @param life 攻撃対象のインスタンス
      */
-    public void attack(Monster monster) {
+    public void attack(Life life) {
         System.out.println(getName()+"の攻撃");
-        monster.setHp(monster.getHp() - 100);
+        life.setHp(life.getHp() - 100);
 
         return;
     }
