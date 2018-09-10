@@ -14,7 +14,7 @@ public class Zombie extends Monster implements Human{
 
 	//やられる
 	public void dead(){
-		System.out.print("やられました");
+		System.out.print("ゾンビはやられました");
 	}
 
 	//コンストラクタ
