@@ -13,7 +13,7 @@ public class Zombie extends Monster implements Human{
 	}
 
 	//攻撃
-	public void attack(Monster monster){
+	public void attack(Life monster){
 		System.out.println(getName()+"の攻撃");
 		monster.setHp(monster.getHp() - 10);
 	}
