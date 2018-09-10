@@ -18,6 +18,7 @@ public class Wizard extends Character implements Human {
      * @param monster 攻撃対象のインスタンス
      */
     public void attack(Life monster) {
+        //武器を持っている場合、武器で攻撃
         if (super.getWeapon() != null) {
             super.getWeapon().attack();
             return;
