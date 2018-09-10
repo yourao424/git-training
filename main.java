@@ -1,13 +1,16 @@
-public class main{
-	public static void main(){
-		Yatagarasu yatagarasuA = new Yatagarasu();
-		Yatagarasu yatagarasuB = new Yatagarasu();
-		Zombie zombieA = new Zombie();
+public class Main{
+	public static void main(String[] args){
+		Yatagarasu yataA = new Yatagarasu();
+		Yatagarasu yataB = new Yatagarasu();
+		Zombie zomA = new Zombie();
+		Zombie zomB = new Zombie();
 
-		while(yatagarasuB.getHp() < 0){
-			zombieA.attack(yatagarasuA);
+		while(yataB.getHp() > 0){
+			zomA.attack(yataB);
 		}
-		System.out.println("Yatagarasu B is dead");
 
+		if(yataB.getHp() <= 0){
+			yataB.dead();
+		}
 	}
 }
