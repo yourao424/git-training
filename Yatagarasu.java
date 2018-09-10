@@ -5,7 +5,7 @@ public class Yatagarasu extends Monster implements Bird {
      * @param hp ヤタガラスのHP
      */
     Yatagarasu(int hp) {
-        this.hp = hp;
+        this.setHp(hp);
     }
 
     /**

@@ -1,5 +1,5 @@
 abstract class Monster extends Life{
 
-	public void attack();
+	abstract void attack(Monster monster);
 	
 }
