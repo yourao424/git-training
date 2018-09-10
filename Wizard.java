@@ -20,7 +20,7 @@ public class Wizard extends Character implements Human {
     public void attack(Life monster) {
         //武器を持っている場合、武器で攻撃
         if (super.getWeapon() != null) {
-            super.getWeapon().attack();
+            super.getWeapon().attack(monster);
             return;
         }
 
