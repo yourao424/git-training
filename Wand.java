@@ -15,14 +15,14 @@ public class Wand extends Weapon{
 		this.setPower(1);
 	}
 
-	public void Throw(Wizard wizard,Monster monster) {
-		System.out.println(wizard.getName() + "は" + this.getName() + "を投げた！");
+	public void Throw(Charactor charactor,Monster monster) {
+		System.out.println(charactor.getName() + "は" + this.getName() + "を投げた！");
 		monster.setHp(monster.getHp() - this.getPower() * 1.5);
 		System.out.println(monster.getName() + "に" this.getPower() + "ダメージ！");
 	}
 
-	public void Attack(Wizard wizard,Monster monster) {
-		System.out.println(wizard.getName() + "は" + this.getName() + "を振りかざした！");
+	public void Attack(Charactor charactor,Monster monster) {
+		System.out.println(charactor.getName() + "は" + this.getName() + "を振りかざした！");
 		monster.setHp(monster.getHp() - this.getPower());
 		System.out.println(monster.getName() + "に" this.getPower() + "ダメージ！");
 	}

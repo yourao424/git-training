@@ -5,19 +5,24 @@ public abstract class Weapon {
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public int getPower() {
 		return power;
 	}
+
 	public void setPower(int power) {
 		this.power = power;
 	}
-	public void Throw(Monster monster) {
+
+	public void Throw(Charactor charactor,Monster monster) {
 
 	}
-	public void Attack(Monster monster) {
+
+	public void Attack(Charactor charactor,Monster monster) {
 
 	}
 }
