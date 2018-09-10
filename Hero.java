@@ -18,9 +18,10 @@ public class Hero extends Character implements Human{
 	}
 
 	//コンストラクタ
-	public Hero(){
-		super.setLv(20);
-		super.setName("勇者はまの");
+	public Hero(String name, int lv, int hp){
+		super.setName(name));
+		super.setLv(lv);
+		super.setHp(hp);
 	}
 
 }
