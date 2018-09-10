@@ -5,6 +5,16 @@ public class Sword extends Weapon {
 		this.setPower(power);
 	}
 
+	Sword(String name){
+		this.setName(name);
+		this.setPower(500);
+	}
+
+	Sword(String name, int power){
+		this.setName("がり〇りくんのあたり棒");
+		this.setPower(500);
+	}
+
 	public void attack(Character character, Monster monster) {
 		System.out.println(character.getName() + "は" + this.getName() + "で攻撃");
 		monster.setHp(monster.getHp() -500);
@@ -18,3 +28,4 @@ public class Sword extends Weapon {
 
 	}
 }
+
