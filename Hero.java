@@ -7,19 +7,19 @@ public class Hero extends Character implements Human{
 	}
 
 	//攻撃
-	public void attack(Life life){
-		if(super.weapon != null){
+	public void attack(Life monster){
+		if(super.getWeapon() == null){
 			System.out.println("勇者" + super.getName() + "のパンチ");
-			life.setHp(life.getHp() - 10);
+			super.setHp(super.getHp() - 10);
 		}else{
 			System.out.println("勇者" + super.getName() + "の攻撃");
-			super.weapon.attack(Character character, Monster monster);
+			super.getWeapon().attack(this, monster);
 		}
 	}
 
 	//コンストラクタ
 	public Hero(String name, int lv, int hp){
-		super.setName(name));
+		super.setName(name);
 		super.setLv(lv);
 		super.setHp(hp);
 	}

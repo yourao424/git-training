@@ -1,7 +1,7 @@
 abstract class Monster extends Life{
 
 	private String name;
-	abstract void attack(Monster monster);
+	abstract void attack(Life monster);
 
 	public String getName(){
 		return this.name;

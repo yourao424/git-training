@@ -18,11 +18,11 @@ public abstract class Weapon {
 		this.power = power;
 	}
 
-	public void Throw(Charactor charactor,Monster monster) {
+	public void Throw(Life charactor,Life monster) {
 
 	}
 
-	public void Attack(Charactor charactor,Monster monster) {
+	public void attack(Life charactor,Life monster) {
 
 	}
 }

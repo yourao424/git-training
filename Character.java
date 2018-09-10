@@ -32,5 +32,6 @@ public abstract class Character extends Life{
 	public void setWeapon(Weapon weapon){
 		this.weapon = weapon;
 	}
-
+	
+	
 }
