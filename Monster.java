@@ -4,10 +4,10 @@ abstract class Monster extends Life{
 	abstract void attack(Monster monster);
 
 	public String getName(){
-		this.name return;
+		return this.name;
 	}
 
-	public void setName(){
+	public void setName(String name){
 		this.name = name;
 	}
 }

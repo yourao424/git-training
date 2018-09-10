@@ -4,19 +4,18 @@ public class Yatagarasu extends Monster implements Bird {
      * コンストラクタ
      * @param hp ヤタガラスのHP
      */
-    Yatagarasu(int hp) {
+    Yatagarasu(int hp,String name) {
         this.setHp(hp);
+				this.setName(name);
     }
 
-		Monster(String name){
-			this.name = name;
-		}
+
     /**
      * ヤタガラスの攻撃
      * @param monster 攻撃対象のインスタンス
      */
     public void attack(Monster monster) {
-        System.out.println("ヤタガラスの攻撃");
+        System.out.println(getName()+"の攻撃");
         monster.setHp(monster.getHp() - 100);
 
         return;
@@ -26,7 +25,7 @@ public class Yatagarasu extends Monster implements Bird {
      * ヤタガラスの死
      */
     public void dead() {
-        System.out.println("ヤタガラスは死んだ");
+        System.out.println(getName()+"は死んだ");
     }
 
     /**

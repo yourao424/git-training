@@ -3,28 +3,25 @@ public class Zombie extends Monster implements Human{
 
 	//逃げる
 
-	Monster(String name){
-		this.name = name;
+
+	Zombie(int hp,String name) {
+			this.setHp(hp);
+			this.setName(name);
 	}
-	
 	public void run(){
 		System.out.print("走って逃げました");
 	}
 
 	//攻撃
 	public void attack(Monster monster){
-		System.out.println("ゾンビの攻撃");
+		System.out.println(getName()+"の攻撃");
 		monster.setHp(monster.getHp() - 10);
 	}
 
 	//やられる
 	public void dead(){
-		System.out.println("ゾンビはやられました");
+		System.out.println(getName()+"は死んだ");
 	}
 
-	//コンストラクタ
-	public Zombie(){
-		super.setHp(9999);
-	}
 
 }
