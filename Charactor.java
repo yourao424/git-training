@@ -5,9 +5,7 @@ private String name;
 private Weapon weapon;
 
 //Attackメソッド
-public void Attack(){
-
-};
+abstract void Attack();
 
 //lvのgetterとsetter
 public int getLv(){
