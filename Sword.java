@@ -10,7 +10,7 @@ public class Sword extends Weapon {
 		this.setPower(500);
 	}
 
-	Sword(String name, int power){
+	Sword(){
 		this.setName("がり〇りくんのあたり棒");
 		this.setPower(500);
 	}
@@ -28,4 +28,3 @@ public class Sword extends Weapon {
 
 	}
 }
-
