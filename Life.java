@@ -14,7 +14,5 @@ abstract class Life {
 		
 	}
 
-	public boolean isDead() {
-		
-	}
+	abstract public boolean isDead(); 
 }

@@ -31,9 +31,11 @@ public class Zombie extends Monster implements Human{
 		System.out.println(getName()+"は死んだ");
 	}
 
-	public boolean isDead() {
+	public boolean isDead(Character character) {
         if(super.getHp() <= -100) {
             return true;
+            character.setExp(character.getExp() + super.getExp());
+
         } else {
             return false;
         }

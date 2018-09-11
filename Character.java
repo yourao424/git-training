@@ -73,4 +73,33 @@ public abstract class Character extends Life{
 	}
 
 	 abstract public boolean isDead();
+
+	 /**
+	  * レベルアップ処理
+	  */
+	 public void levelUp() {
+		 this.setLv(this.getLv() + 1);
+
+		 this.setMaxHp(this.getMaxHp() + this.getLv());
+		 this.setHp(this.getMaxHp());
+
+		 this.setExp(this.getExp() - this.getMaxExp());
+		 this.setExp(this.getMaxExp() + this.getLv());
+
+		 System.out.printf(
+			 "%sはレベル%dになった\nHP : %d\nEXP: %d\n", this.getName(), this.getHp(), this.getExp()
+		 );
+	 }
+
+	 /**
+	  * レベルアップ判定
+	  * @return レベルアップ可能ならtrue
+	  */
+	 public boolean isLevelUp() {
+		 if(this.getMaxExp() <= this.getExp()) {
+			 return true;
+		 }else{
+			 return false;
+		 }
+	 }
 }

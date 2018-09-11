@@ -50,9 +50,10 @@ public class Yatagarasu extends Monster implements Bird {
         return;
     }
 
-    public boolean isDead() {
+    public boolean isDead(Character character) {
         if(super.getHp() <= 0) {
             return true;
+            character.setExp(character.getExp() + super.getExp());
         } else {
             return false;
         }
