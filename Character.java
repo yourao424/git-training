@@ -46,4 +46,7 @@ public abstract class Character extends Life{
 	}
 
 
+	public boolean isDead() {
+
+	}
 }

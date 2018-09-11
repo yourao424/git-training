@@ -4,9 +4,18 @@ public class Yatagarasu extends Monster implements Bird {
      * コンストラクタ
      * @param hp ヤタガラスのHP
      */
-    Yatagarasu(int hp,String name) {
+    public Yatagarasu(int hp,String name) {
         this.setHp(hp);
-				this.setName(name);
+	    this.setName(name);
+    }
+
+    /**
+     * 引数なしのコンストラクタ
+     */
+    public Yatagarasu() {
+        super.setHp(100);
+        super.setName("八咫烏");
+        super.setExp(50);
     }
 
 
@@ -39,6 +48,14 @@ public class Yatagarasu extends Monster implements Bird {
     public void fry(){
     	System.out.print("ヤタガラス飛翔！");
         return;
+    }
+
+    public boolean isDead() {
+        if(super.getHp() <= 0) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 
