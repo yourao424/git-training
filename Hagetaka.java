@@ -13,13 +13,14 @@ public class Hagetaka extends Monster implements Bird {
      * @param name 設定する名前
      */
     public Hagetaka(String name) {
-        Hagetaka();
         super.setName(name);
+				super.setHp(100);
+				super.setExp(50);
     }
 
     /**
      * 攻撃するメソッド
-     * 
+     *
      * @param enemy 攻撃対象
      */
     public void attack(Life enemy) {
@@ -54,7 +55,7 @@ public class Hagetaka extends Monster implements Bird {
 
     /**
      * 死亡判定
-     * 
+     *
      * @return 死んだ場合はtrue
      */
     public boolean isDead() {
