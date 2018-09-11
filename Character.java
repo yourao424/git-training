@@ -1,7 +1,7 @@
 public abstract class Character extends Life{
 
 	private int lv;
-	private int maxHp;
+	private int maxHp = 100;
 	private int hp;
 	private int power;
 	private int maxExp = 10;
