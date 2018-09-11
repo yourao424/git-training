@@ -20,11 +20,19 @@ public abstract class Character extends Life{
 		this.lv = lv;
 	}
 
-	//lvのgetterとsetter
+	//hpのgetterとsetter
 	public int getHp(){
 		return this.hp;
 	}
 	public void setHp(int hp){
+		this.hp = hp;
+	}
+
+	//maxhpのgetterとsetter
+	public int getMaxHp(){
+		return this.hp;
+	}
+	public void setMaxHp(int hp){
 		this.hp = hp;
 	}
 
