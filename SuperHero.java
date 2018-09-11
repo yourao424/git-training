@@ -5,6 +5,18 @@ public class SuperHero extends Hero{
 		super(name, lv, hp);
 	}
 
+	public SuperHero(String name, int lv) {
+		super(name, lv, 100);
+	}
+
+	public SuperHero(String name) {
+		super(name, 1, 100);
+	}
+
+	public SuperHero() {
+		super("ななしさん", 1, 100);
+	}
+
 	public void attack(Life monster) {
 		if(super.getWeapon() == null){
 			System.out.println("スーパー勇者" + super.getName() + "のパンチ");

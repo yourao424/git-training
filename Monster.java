@@ -14,7 +14,7 @@ abstract class Monster extends Life{
 	}
 
 	public int getExp() {
-		return exp;
+		return this.exp;
 	}
 
 	public void setExp(int exp) {
