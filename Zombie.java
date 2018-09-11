@@ -4,6 +4,7 @@ public class Zombie extends Monster implements Human{
 	public Zombie(int hp,String name) {
 		this.setHp(hp);
 		this.setName(name);
+		this.setExp(50);
 	}
 
 	public Zombie() {
