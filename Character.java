@@ -80,7 +80,7 @@ public abstract class Character extends Life{
 	*/
 	public void grow(Monster monster){
 		this.setExp(this.getExp() + monster.getExp());
-		if(this.getExp() >= this.getMaxExp()){
+		while(this.getExp() >= this.getMaxExp()){
 			levelUp();
 		}
 	}
