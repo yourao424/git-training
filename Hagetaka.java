@@ -58,9 +58,10 @@ public class Hagetaka extends Monster implements Bird {
 	*
 	* @return 死んだ場合はtrue
 	*/
-	public boolean isDead() {
+	public boolean isDead(Character character) {
 		if (super.getHp() <= 0) {
 			return true;
+			character.setExp(character.getExp() + super.getExp());
 		} else {
 			return false;
 		}
