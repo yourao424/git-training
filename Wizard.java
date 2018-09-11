@@ -6,10 +6,19 @@ public class Wizard extends Character implements Human {
 	* @param lv   キャラクターのレベル
 	* @param hp   キャラクターの体力
 	*/
-	public Wizard(String name, int lv, int hp) {
+	Wizard(String name, int lv, int hp) {
 		super.setName(name);
 		super.setLv(lv);
 		super.setHp(hp);
+	}
+
+	/**
+	 * 引数なしのコンストラクタ
+	 */
+	Wizard() {
+		super.setHp(100);
+		super.setLv(1);
+		super.setName("ななし");
 	}
 
 	/**
@@ -41,5 +50,17 @@ public class Wizard extends Character implements Human {
 
 	public void dead() {
 		System.out.println(super.getName() + "は倒れた！");
+	}
+
+	/**
+	 * 死亡判定
+	 * @return 死んだらture
+	 */
+	public boolean isDead() {
+		if(this.getHp() <= 0) {
+			return true;
+		}else{
+			return false;
+		}
 	}
 }
