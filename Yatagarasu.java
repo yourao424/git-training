@@ -36,6 +36,10 @@ public class Yatagarasu extends Monster implements Bird {
         return;
     }
 
+    public void fry(){
+    	System.out.print("ヤタガラス飛翔！");
+        return;
+    }
 
 
 }
