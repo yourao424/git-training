@@ -4,8 +4,8 @@ public abstract class Character extends Life{
 	private int maxHp;
 	private int hp;
 	private int power;
-	private int maxExp;
-	private int exp;
+	private int maxExp = 10;
+	private int exp = 0;
 	private String name;
 	private Weapon weapon;
 
@@ -72,34 +72,42 @@ public abstract class Character extends Life{
 		this.weapon = weapon;
 	}
 
-	 abstract public boolean isDead();
+	abstract public boolean isDead();
 
-	 /**
-	  * レベルアップ処理
-	  */
-	 public void levelUp() {
-		 this.setLv(this.getLv() + 1);
 
-		 this.setMaxHp(this.getMaxHp() + this.getLv());
-		 this.setHp(this.getMaxHp());
+	/**
+	* レベルアップ処理
+	*/
+	public void grow(Monster monster){
+		this.setExp(this.getExp() + monster.getExp());
+		if(this.getExp() >= this.getMaxExp()){
+			levelUp();
+		}
+	}
 
-		 this.setExp(this.getExp() - this.getMaxExp());
-		 this.setExp(this.getMaxExp() + this.getLv());
+	public void levelUp() {
+		this.setLv(this.getLv() + 1);
 
-		 System.out.printf(
-			 "%sはレベル%dになった\nHP : %d\nEXP: %d\n", this.getName(), this.getHp(), this.getExp()
-		 );
-	 }
+		this.setMaxHp(this.getMaxHp() + this.getLv());
+		this.setHp(this.getMaxHp());
 
-	 /**
-	  * レベルアップ判定
-	  * @return レベルアップ可能ならtrue
-	  */
-	 public boolean isLevelUp() {
-		 if(this.getMaxExp() <= this.getExp()) {
-			 return true;
-		 }else{
-			 return false;
-		 }
-	 }
+		this.setExp(this.getExp() - this.getMaxExp());
+		this.setExp(this.getMaxExp() + this.getLv());
+
+		System.out.printf(
+		"%sはレベル%dになった\nHP : %d\nEXP: %d\n", this.getName(), this.getLv(), this.getMaxHp(), this.getExp()
+		);
+	}
+
+	/**
+	* レベルアップ判定
+	* @return レベルアップ可能ならtrue
+	*/
+	public boolean isLevelUp() {
+		if(this.getMaxExp() <= this.getExp()) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 }

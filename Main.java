@@ -16,13 +16,11 @@ public class Main{
 			fujii.attack(yataA);
 			ito.attack(zomA);
 		}while(zomA.getHp() >= -100);
+
 		if(zomA.isDead()){
 			zomA.dead();
-			if(ito.isLevelUp()){
-				ito.levelUp();
-			}
+			ito.grow(zomA);
 		}
-
 
 	}
 }
