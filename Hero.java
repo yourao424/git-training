@@ -5,6 +5,10 @@ public class Hero extends Character implements Human{
 	public void run(){
 		System.out.println("勇者" + super.getName() + "は走って逃げた");
 	}
+	//しゃべる
+	public void talk(){
+		System.out.print("my name is HAMANO");
+	}
 
 	//攻撃
 	public void attack(Life monster){
