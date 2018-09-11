@@ -72,7 +72,5 @@ public abstract class Character extends Life{
 		this.weapon = weapon;
 	}
 
-	public boolean isDead() {
-
-	}
+	 abstract public boolean isDead();
 }
