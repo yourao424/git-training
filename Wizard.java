@@ -38,4 +38,12 @@ public class Wizard extends Character implements Human {
 	public void dead() {
 		System.out.println(super.getName() + "は倒れた！");
 	}
+
+    public boolean isDead() {
+        if(super.getHp() <= 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

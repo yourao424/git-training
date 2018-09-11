@@ -10,4 +10,8 @@ abstract class Monster extends Life{
 	public void setName(String name){
 		this.name = name;
 	}
+
+	public boolean isDead() {
+		
+	}
 }
