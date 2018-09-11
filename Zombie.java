@@ -5,11 +5,16 @@ public class Zombie extends Monster implements Human{
 
 
 	Zombie(int hp,String name) {
-			this.setHp(hp);
-			this.setName(name);
+		this.setHp(hp);
+		this.setName(name);
 	}
+	//逃げる
 	public void run(){
 		System.out.print("走って逃げました");
+	}
+	//しゃべる
+	public void talk(){
+		System.out.print("ぼくははまのっていうんだよろしくね");
 	}
 
 	//攻撃

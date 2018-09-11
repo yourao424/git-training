@@ -12,7 +12,7 @@ public class Wand extends Weapon{
 
 	Wand(){
 		this.setName("杖杖杖杖");
-		this.setPower(1);
+		this.setPower(10);
 	}
 
 	public void attack(Character character, Monster monster) {
