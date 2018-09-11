@@ -4,6 +4,7 @@ public class Zombie extends Monster implements Human{
 	public Zombie(int hp,String name) {
 		this.setHp(hp);
 		this.setName(name);
+		this.setExp(50);
 	}
 
 	public Zombie() {
@@ -31,11 +32,9 @@ public class Zombie extends Monster implements Human{
 		System.out.println(getName()+"は死んだ");
 	}
 
-	public boolean isDead(Character character) {
+	public boolean isDead() {
         if(super.getHp() <= -100) {
             return true;
-            character.setExp(character.getExp() + super.getExp());
-
         } else {
             return false;
         }
