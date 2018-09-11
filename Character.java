@@ -34,7 +34,7 @@ public abstract class Character extends Life{
 	public int getMaxHp(){
 		return this.maxHp;
 	}
-	public void setMaxHp(int maxHp){
+	protected void setMaxHp(int maxHp){
 		this.maxHp = maxHp;
 	}
 
@@ -47,10 +47,10 @@ public abstract class Character extends Life{
 	}
 
 	//maxExpのgetterとsetter
-	public int getMaxExp(){
+	protected int getMaxExp(){
 		return this.maxExp;
 	}
-	public void setMaxExp(int maxExp){
+	void setMaxExp(int maxExp){
 		this.maxExp = maxExp;
 	}
 
