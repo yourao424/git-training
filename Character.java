@@ -91,6 +91,10 @@ public abstract class Character extends Life{
 		 );
 	 }
 
+	 /**
+	  * レベルアップ判定
+	  * @return レベルアップ可能ならtrue
+	  */
 	 public boolean isLevelUp() {
 		 if(this.getMaxExp() <= this.getExp()) {
 			 return true;
