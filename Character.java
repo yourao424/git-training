@@ -90,4 +90,12 @@ public abstract class Character extends Life{
 			 "%sはレベル%dになった\nHP : %d\nEXP: %d\n", this.getName(), this.getHp(), this.getExp()
 		 );
 	 }
+
+	 public boolean isLevelUp() {
+		 if(this.getMaxExp() <= this.getExp()) {
+			 return true;
+		 }else{
+			 return false;
+		 }
+	 }
 }
