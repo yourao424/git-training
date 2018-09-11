@@ -32,10 +32,10 @@ public class Zombie extends Monster implements Human{
 	}
 
 	public boolean isDead() {
-		if(this.getHp() <= 100) {
-			return true;
-		}else{
-			return false;
-		}
-	}
+        if(super.getHp() <= -100) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

@@ -13,6 +13,9 @@ abstract class Monster extends Life{
 		this.name = name;
 	}
 
+	public boolean isDead() {
+	}
+	
 	public int getExp() {
 		return this.exp;
 	}

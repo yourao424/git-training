@@ -28,4 +28,15 @@ public class Hero extends Character implements Human{
 		super.setHp(hp);
 	}
 
+	public Hero() {
+		this("ななし", 1, 100);
+	}
+
+	public boolean isDead() {
+		if(this.getHp() <= 0) {
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
