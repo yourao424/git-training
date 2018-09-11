@@ -88,11 +88,11 @@ public abstract class Character extends Life{
 	public void levelUp() {
 		this.setLv(this.getLv() + 1);
 
-		this.setMaxHp(this.getMaxHp() + this.getLv());
+		this.setMaxHp(this.getMaxHp() + 50);
 		this.setHp(this.getMaxHp());
 
 		this.setExp(this.getExp() - this.getMaxExp());
-		this.setExp(this.getMaxExp() + this.getLv());
+		this.setMaxExp(this.getMaxExp() + 50);
 
 		System.out.printf(
 		"%sはレベル%dになった\nHP : %d\nEXP: %d\n", this.getName(), this.getLv(), this.getMaxHp(), this.getExp()
