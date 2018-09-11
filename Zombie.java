@@ -1,12 +1,15 @@
 
 public class Zombie extends Monster implements Human{
 
-	//逃げる
-
-
-	Zombie(int hp,String name) {
+	public Zombie(int hp,String name) {
 		this.setHp(hp);
 		this.setName(name);
+	}
+
+	public Zombie() {
+		this.setHp(100);
+		this.setName("ゾンビッチ");
+		this.setExp(50);
 	}
 	//逃げる
 	public void run(){
@@ -35,5 +38,4 @@ public class Zombie extends Monster implements Human{
             return false;
         }
     }
-
 }
