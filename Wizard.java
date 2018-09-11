@@ -33,8 +33,8 @@ public class Wizard extends Character implements Human {
 			return;
 		}
 
-		System.out.println(super.getName() + "の攻撃、" + ((Character) monster).getName() + "に100の攻撃");
-		monster.setHp(monster.getHp() - 100);
+		System.out.println(super.getName() + "の攻撃、" + super.getName() + "に10の攻撃");
+		monster.setHp(monster.getHp() - 10);
 		return;
 	}
 
@@ -64,4 +64,3 @@ public class Wizard extends Character implements Human {
 		}
 	}
 }
-
