@@ -12,7 +12,7 @@ public class Sword extends Weapon {
 
 	Sword(){
 		this.setName("がり〇りくんのあたり棒");
-		this.setPower(500);
+		this.setPower(10);
 	}
 
 	public void attack(Character character, Monster monster) {
