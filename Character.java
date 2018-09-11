@@ -1,8 +1,12 @@
 public abstract class Character extends Life{
 
 	private int lv;
+	private int maxhp;
+	private int hp;
+	private int power;
 	private String name;
 	private Weapon weapon;
+
 
 
 	//Attackメソッド
@@ -14,6 +18,14 @@ public abstract class Character extends Life{
 	}
 	public void setLv(int lv){
 		this.lv = lv;
+	}
+
+	//lvのgetterとsetter
+	public int getHp(){
+		return this.hp;
+	}
+	public void setHp(int hp){
+		this.hp = hp;
 	}
 
 	//nameのgetterとsetter
@@ -32,8 +44,9 @@ public abstract class Character extends Life{
 	public void setWeapon(Weapon weapon){
 		this.weapon = weapon;
 	}
-	
+
+
 	public boolean isDead() {
-		
+
 	}
 }
