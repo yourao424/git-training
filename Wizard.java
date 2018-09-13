@@ -10,6 +10,8 @@ public class Wizard extends Character implements Human {
 		super.setName(name);
 		super.setLv(lv);
 		super.setHp(hp);
+		super.setMaxHp(hp);
+
 	}
 
 	/**
@@ -17,6 +19,7 @@ public class Wizard extends Character implements Human {
 	 */
 	Wizard() {
 		super.setHp(100);
+		super.setMaxHp(100);
 		super.setLv(1);
 		super.setName("ななし");
 	}
