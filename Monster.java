@@ -10,6 +10,9 @@ abstract class Monster extends Life{
 	}
 
 	public void setName(String name){
+		if(name.equals("")) {
+			name = "ななし";
+		}
 		this.name = name;
 	}
 
@@ -20,6 +23,9 @@ abstract class Monster extends Life{
 	}
 
 	public void setExp(int exp) {
+		if(exp < 0) {
+			exp = 0;
+		}
 		this.exp = exp;
 	}
 }
