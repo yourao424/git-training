@@ -15,7 +15,7 @@ public class Yatagarasu extends Monster implements Bird {
 	*/
 	public Yatagarasu() {
 		super.setHp(100);
-		super.setName("八咫烏");
+		super.setName("ななし");
 		super.setExp(50);
 	}
 
@@ -35,19 +35,19 @@ public class Yatagarasu extends Monster implements Bird {
 	* ヤタガラスの死
 	*/
 	public void dead() {
-		System.out.println(getName()+"は死んだ");
+		System.out.println(this.getName()+"は死んだ");
 	}
 
 	/**
 	* ヤタガラスの疾走
 	*/
 	public void run() {
-		System.out.print("ヤタガラスは走った！");
+		System.out.println(this.getName() + "は走った！");
 		return;
 	}
 
 	public void fry(){
-		System.out.print("ヤタガラス飛翔！");
+		System.out.println(this.getName() + "飛翔！");
 		return;
 	}
 
