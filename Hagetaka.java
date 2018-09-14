@@ -24,7 +24,7 @@ public class Hagetaka extends Monster implements Bird {
 	* @param enemy 攻撃対象
 	*/
 	public void attack(Life enemy) {
-		System.out.println(super.getName() + "の攻撃、10のダメージ");
+		System.out.println(super.getName() + "の攻撃");
 		enemy.setHp(enemy.getHp() - 10);
 		return;
 	}
