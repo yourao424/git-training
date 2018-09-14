@@ -1,4 +1,3 @@
-
 public class Hero extends Character implements Human{
 
 	//逃げる
@@ -14,22 +13,39 @@ public class Hero extends Character implements Human{
 	public void attack(Life monster){
 		if(super.getWeapon() == null){
 			System.out.println("勇者" + super.getName() + "のパンチ");
-			super.setHp(super.getHp() - 10);
+			monster.setHp(monster.getHp() - 10);
 		}else{
 			System.out.println("勇者" + super.getName() + "の攻撃");
 			super.getWeapon().attack(this, monster);
 		}
 	}
 
-	//コンストラクタ
-	public Hero(String name, int lv, int hp){
-		super.setName(name);
-		super.setLv(lv);
-		super.setHp(hp);
+	//やられる
+	public void dead(){
+		System.out.println(getName()+"は死んだ");
 	}
 
+	//コンストラクタ
 	public Hero() {
-		this("ななし", 1, 100);
+		this("ななし", 100, 5);
+	}
+
+	public Hero(String name){
+		this(name,100,5);
+	}
+
+	public Hero(int hp){
+		this("ななし",hp,5);
+	}
+
+	public Hero(String name,int hp){
+		this(name,hp,5);
+	}
+
+	public Hero(String name, int hp, int power){
+		super.setName(name);
+		super.setHp(hp);
+		super.setPower(power);
 	}
 
 	public boolean isDead() {

@@ -1,17 +1,5 @@
-
 public class Zombie extends Monster implements Human{
 
-	public Zombie(int hp,String name) {
-		this.setHp(hp);
-		this.setName(name);
-		this.setExp(50);
-	}
-
-	public Zombie() {
-		this.setHp(100);
-		this.setName("ゾンビッチ");
-		this.setExp(50);
-	}
 	//逃げる
 	public void run(){
 		System.out.print("走って逃げました");
@@ -39,4 +27,26 @@ public class Zombie extends Monster implements Human{
             return false;
         }
     }
+
+	public Zombie() {
+		this(100,"ゾンビッチ",0);
+	}
+
+	public Zombie(String name) {
+		this(100,name,0);
+	}
+
+	public Zombie(int hp){
+		this(hp,"ゾンビッチ",0);
+	}
+
+	public Zombie(int hp,String name) {
+		this(hp,name,0);
+	}
+
+	public Zombie(int hp,String name, int exp) {
+		this.setHp(hp);
+		this.setName(name);
+		this.setExp(exp);
+	}
 }
