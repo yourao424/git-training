@@ -35,7 +35,7 @@ public class Yatagarasu extends Monster implements Bird {
 	* ヤタガラスの死
 	*/
 	public void dead() {
-		System.out.println(this.getName()+"は死んだ");
+		System.out.println(this.getName() + "は死んだ");
 	}
 
 	/**
