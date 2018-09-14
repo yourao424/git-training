@@ -14,7 +14,7 @@ public abstract class Character extends Life{
 	}
 
 
-	public Character(int lv, int maxHp, int macExp, int exp){
+	public Character(int lv, int maxHp, int maxExp, int exp){
 
 	}
 
