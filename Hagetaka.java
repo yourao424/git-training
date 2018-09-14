@@ -4,7 +4,7 @@ public class Hagetaka extends Monster implements Bird {
 	*/
 	public Hagetaka() {
 		super.setHp(100);
-		super.setName("ハゲ");
+		super.setName("ななし");
 		super.setExp(50);
 	}
 
@@ -24,8 +24,8 @@ public class Hagetaka extends Monster implements Bird {
 	* @param enemy 攻撃対象
 	*/
 	public void attack(Life enemy) {
-		System.out.println(super.getName() + "の攻撃、10のダメージ");
-		enemy.setHp(enemy.getHp() - 10);
+		System.out.println(super.getName() + "の攻撃");
+		enemy.setHp(enemy.getHp() - 100);
 		return;
 	}
 
@@ -33,7 +33,7 @@ public class Hagetaka extends Monster implements Bird {
 	* 逃げる
 	*/
 	public void run() {
-		System.out.println(super.getName() + "は逃げた");
+		System.out.println(super.getName() + "は走った！");
 		return;
 	}
 
@@ -41,7 +41,7 @@ public class Hagetaka extends Monster implements Bird {
 	* 飛ぶ
 	*/
 	public void fry() {
-		System.out.println(super.getName() + "は飛んだ");
+		System.out.println(super.getName() + "飛翔！");
 		return;
 	}
 
