@@ -4,7 +4,7 @@ public class Hagetaka extends Monster implements Bird {
 	*/
 	public Hagetaka() {
 		super.setHp(100);
-		super.setName("ハゲ");
+		super.setName("ななし");
 		super.setExp(50);
 	}
 
