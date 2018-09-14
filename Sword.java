@@ -17,13 +17,13 @@ public class Sword extends Weapon {
 
 	public void attack(Character character, Monster monster) {
 		System.out.println(character.getName() + "は" + this.getName() + "で攻撃");
-		monster.setHp(monster.getHp() - this.getPower);
+		monster.setHp(monster.getHp() - this.getPower());
 		System.out.println(monster.getName() + "に" + this.getPower() + "のダメージ");
 	}
 
 	public void Throw(Character character, Monster monster) {
 		System.out.println(character.getName() + "は" + this.getName() + "を投げた");
-		monster.setHp(monster.getHp() - (this.getPower * 2));
+		monster.setHp(monster.getHp() - (this.getPower() * 2));
 		System.out.println(monster.getName() + "に" + this.getPower() + "のダメージ");
 
 	}
