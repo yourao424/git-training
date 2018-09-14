@@ -4,11 +4,22 @@ public abstract class Character extends Life{
 	private int maxHp;
 	private int hp;
 	private int power;
-	private int maxExp = 10;
-	private int exp = 0;
+	private int maxExp;
+	private int exp;
 	private String name;
 	private Weapon weapon;
 
+	public Character(){
+		this(1, 100, 10, 0);
+	}
+
+
+	public Character(int lv, int maxHp, int maxExp, int exp){
+		this.setLv(lv);
+		this.setMaxHp(maxHp);;
+		this.setMaxExp(maxExp);
+		this.setExp(exp);
+	}
 
 
 	//Attackメソッド
@@ -36,6 +47,14 @@ public abstract class Character extends Life{
 	}
 	protected void setMaxHp(int maxHp){
 		this.maxHp = maxHp;
+	}
+
+	//powerのgetterとsetter
+	public int getPower(){
+		return this.power;
+	}
+	public void setPower(int power){
+		this.power = power;
 	}
 
 	//expのgetterとsetter
