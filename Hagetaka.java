@@ -33,7 +33,7 @@ public class Hagetaka extends Monster implements Bird {
 	* 逃げる
 	*/
 	public void run() {
-		System.out.println(super.getName() + "は逃げた");
+		System.out.println(super.getName() + "は走った！");
 		return;
 	}
 
